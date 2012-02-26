@@ -8,6 +8,7 @@
 
 #import "CCApplicationController.h"
 #import "CCContextViewController.h"
+#import "CubicusClient.h"
 
 #import "block_selector.h"
 
@@ -25,7 +26,15 @@
         _currentApplication = -1;
         _currentContext = -1;
         
-        client = [[CBClient alloc] initWithHost:host];
+        // If we don't have a GUID stored yet, generate one and store it
+        NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
+        NSString *guid = [def objectForKey:CC_GUID_KEY];
+        if (guid == nil) {
+            guid = [CBClient generateGUID];
+            [def setObject:guid forKey:CC_GUID_KEY];
+        }
+        
+        client = [[CBClient alloc] initWithHost:host guid:guid];
         self.client.delegate = self;
     }
     return self;
