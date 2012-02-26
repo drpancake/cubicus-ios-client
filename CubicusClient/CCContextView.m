@@ -10,6 +10,7 @@
 
 #import "CBLayoutElement.h"
 #import "CBBox.h"
+#import "CBButton.h"
 
 @implementation CCContextView
 
@@ -41,8 +42,13 @@
             w = frame.size.width * el.ratio;
             CGRect f = CGRectMake(x, y, w, h);
             x += w;
-            
-            UIView *v = [el viewWithFrame:f];
+
+            // Stubbed
+            UIView *v = [[UIView alloc] initWithFrame:f];
+            UILabel *labelView = [[UILabel alloc] initWithFrame:v.bounds];
+            labelView.text = [NSString stringWithFormat:@"<%@>", [el class]];
+            [v addSubview:labelView];
+
             [self addSubview:v];
         }
     }
