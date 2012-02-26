@@ -8,12 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CBClient.h"
-#import "CBClientDelegate.h"
+#import "CBDeviceClient.h"
+#import "CBDeviceClientDelegate.h"
 #import "CBHost.h"
 #import "CBContext.h"
 
-@interface CCApplicationController : UIViewController <CBClientDelegate> {
+@interface CCApplicationController : UIViewController <CBDeviceClientDelegate> {
     /*
       Keeps track of all current CBApplications. CBClient notifies us when the list
       needs to change (keys are NSNumber application IDs, values are CBApplication objects)
@@ -42,7 +42,7 @@
 - (void)addSwipeRecognizers;
 + (NSString *)keyForApplication:(NSUInteger)applicationID context:(NSUInteger)contextID;
 
-@property (nonatomic, strong, readonly) CBClient *client;
-@property (nonatomic, weak) id<CBClientDelegate> delegate;
+@property (nonatomic, strong, readonly) CBDeviceClient *client;
+@property (nonatomic, weak) id<CBDeviceClientDelegate> delegate;
 
 @end

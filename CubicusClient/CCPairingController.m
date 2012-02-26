@@ -11,7 +11,6 @@
 #import "CCPairingController.h"
 #import "CubicusClient.h"
 #import "CCApplicationController.h"
-#import "CBClient.h"
 #import "CCHostViewController.h"
 #import "CBHost.h"
 

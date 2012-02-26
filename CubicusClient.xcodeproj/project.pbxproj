@@ -33,7 +33,6 @@
 		1A41C90114FA6D60009D5328 /* SBJsonTokeniser.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C8F314FA6D60009D5328 /* SBJsonTokeniser.m */; };
 		1A41C90214FA6D60009D5328 /* SBJsonUTF8Stream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C8F514FA6D60009D5328 /* SBJsonUTF8Stream.m */; };
 		1A41C90314FA6D60009D5328 /* SBJsonWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C8F714FA6D60009D5328 /* SBJsonWriter.m */; };
-		1A41C91E14FA6D86009D5328 /* CBClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C90614FA6D86009D5328 /* CBClient.m */; };
 		1A41C91F14FA6D86009D5328 /* CBBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C90A14FA6D86009D5328 /* CBBox.m */; };
 		1A41C92014FA6D86009D5328 /* CBButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C90C14FA6D86009D5328 /* CBButton.m */; };
 		1A41C92114FA6D86009D5328 /* CBCanvas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C90E14FA6D86009D5328 /* CBCanvas.m */; };
@@ -47,6 +46,7 @@
 		1A41C96814FA6DB6009D5328 /* AsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C92B14FA6DB6009D5328 /* AsyncSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1A41C96914FA6DB6009D5328 /* AsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C92D14FA6DB6009D5328 /* AsyncUdpSocket.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		1A41C98814FA6E2E009D5328 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A41C98714FA6E2E009D5328 /* CFNetwork.framework */; };
+		1A41C9BF14FA7443009D5328 /* CBDeviceClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C9BD14FA7442009D5328 /* CBDeviceClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -102,9 +102,6 @@
 		1A41C8F514FA6D60009D5328 /* SBJsonUTF8Stream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonUTF8Stream.m; sourceTree = "<group>"; };
 		1A41C8F614FA6D60009D5328 /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
 		1A41C8F714FA6D60009D5328 /* SBJsonWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBJsonWriter.m; sourceTree = "<group>"; };
-		1A41C90514FA6D86009D5328 /* CBClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBClient.h; sourceTree = "<group>"; };
-		1A41C90614FA6D86009D5328 /* CBClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBClient.m; sourceTree = "<group>"; };
-		1A41C90714FA6D86009D5328 /* CBClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBClientDelegate.h; sourceTree = "<group>"; };
 		1A41C90914FA6D86009D5328 /* CBBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBox.h; sourceTree = "<group>"; };
 		1A41C90A14FA6D86009D5328 /* CBBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBox.m; sourceTree = "<group>"; };
 		1A41C90B14FA6D86009D5328 /* CBButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBButton.h; sourceTree = "<group>"; };
@@ -130,6 +127,9 @@
 		1A41C92C14FA6DB6009D5328 /* AsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsyncUdpSocket.h; sourceTree = "<group>"; };
 		1A41C92D14FA6DB6009D5328 /* AsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsyncUdpSocket.m; sourceTree = "<group>"; };
 		1A41C98714FA6E2E009D5328 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		1A41C9BC14FA7442009D5328 /* CBDeviceClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDeviceClient.h; sourceTree = "<group>"; };
+		1A41C9BD14FA7442009D5328 /* CBDeviceClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBDeviceClient.m; sourceTree = "<group>"; };
+		1A41C9BE14FA7443009D5328 /* CBDeviceClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBDeviceClientDelegate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,9 +261,9 @@
 		1A41C90414FA6D86009D5328 /* cubicus-objc-shared */ = {
 			isa = PBXGroup;
 			children = (
-				1A41C90514FA6D86009D5328 /* CBClient.h */,
-				1A41C90614FA6D86009D5328 /* CBClient.m */,
-				1A41C90714FA6D86009D5328 /* CBClientDelegate.h */,
+				1A41C9BC14FA7442009D5328 /* CBDeviceClient.h */,
+				1A41C9BD14FA7442009D5328 /* CBDeviceClient.m */,
+				1A41C9BE14FA7443009D5328 /* CBDeviceClientDelegate.h */,
 				1A41C90814FA6D86009D5328 /* layout */,
 				1A41C91514FA6D86009D5328 /* models */,
 			);
@@ -402,7 +402,6 @@
 				1A41C90114FA6D60009D5328 /* SBJsonTokeniser.m in Sources */,
 				1A41C90214FA6D60009D5328 /* SBJsonUTF8Stream.m in Sources */,
 				1A41C90314FA6D60009D5328 /* SBJsonWriter.m in Sources */,
-				1A41C91E14FA6D86009D5328 /* CBClient.m in Sources */,
 				1A41C91F14FA6D86009D5328 /* CBBox.m in Sources */,
 				1A41C92014FA6D86009D5328 /* CBButton.m in Sources */,
 				1A41C92114FA6D86009D5328 /* CBCanvas.m in Sources */,
@@ -415,6 +414,7 @@
 				1A41C92814FA6D86009D5328 /* CBHost.m in Sources */,
 				1A41C96814FA6DB6009D5328 /* AsyncSocket.m in Sources */,
 				1A41C96914FA6DB6009D5328 /* AsyncUdpSocket.m in Sources */,
+				1A41C9BF14FA7443009D5328 /* CBDeviceClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

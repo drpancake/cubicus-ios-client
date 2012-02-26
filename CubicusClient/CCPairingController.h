@@ -14,9 +14,6 @@
   CCPairingController is a container view controller.
   
   By default performs Bonjour discovery/resolve and displays a CCHostViewController
- 
-  When the user opts to connect to a host, a CBClient is connected and a CCApplicationController
-  takes over as a parent view controller
 */
 
 @class CCHostViewController;

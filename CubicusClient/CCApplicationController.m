@@ -30,11 +30,11 @@
         NSUserDefaults *def = [NSUserDefaults standardUserDefaults];
         NSString *guid = [def objectForKey:CC_GUID_KEY];
         if (guid == nil) {
-            guid = [CBClient generateGUID];
+            guid = [CBDeviceClient generateGUID];
             [def setObject:guid forKey:CC_GUID_KEY];
         }
         
-        client = [[CBClient alloc] initWithHost:host guid:guid];
+        client = [[CBDeviceClient alloc] initWithHost:host guid:guid];
         self.client.delegate = self;
     }
     return self;
@@ -94,7 +94,7 @@
         return;
     }
     
-    // Note: CBClient will call us as its delegate for actual visual change
+    // Note: CBDeviceClient will call us as its delegate for actual visual change
     
     // Determine new app/context IDs based on direction
     NSUInteger newApplication = _currentApplication;
@@ -172,9 +172,9 @@
 }
 
 #pragma mark -
-#pragma mark CBClientDelegate
+#pragma mark CBDeviceClientDelegate
 
-- (void)client:(CBClient *)client didReceiveApplications:(NSArray *)applications
+- (void)client:(CBDeviceClient *)client didReceiveApplications:(NSArray *)applications
 {
     NSAssert([_applications count] == 0 && [_contextViewControllers count] == 0,
              @"Shouldn't have received apps or created contexts at this point");
@@ -194,7 +194,7 @@
     }
 }
 
-- (void)client:(CBClient *)client didSwitchApplication:(NSUInteger)applicationID context:(NSUInteger)contextID
+- (void)client:(CBDeviceClient *)client didSwitchApplication:(NSUInteger)applicationID context:(NSUInteger)contextID
 {
     // TODO: first switch: pre-load all application default views and slide them in from the left
     
