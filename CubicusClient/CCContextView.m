@@ -8,10 +8,6 @@
 
 #import "CCContextView.h"
 
-#import "CBLayoutElement.h"
-#import "CBBox.h"
-#import "CBButton.h"
-
 @implementation CCContextView
 
 @synthesize layout;

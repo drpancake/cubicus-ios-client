@@ -8,10 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CBDeviceClient.h"
-#import "CBDeviceClientDelegate.h"
-#import "CBHost.h"
-#import "CBContext.h"
+#import "CBShared.h"
 
 @interface CCApplicationController : UIViewController <CBDeviceClientDelegate> {
     /*

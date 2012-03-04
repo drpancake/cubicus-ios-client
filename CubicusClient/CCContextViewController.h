@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CBContext.h"
+#import "CBShared.h"
 
 @interface CCContextViewController : UIViewController {
     UIView *_contextView;

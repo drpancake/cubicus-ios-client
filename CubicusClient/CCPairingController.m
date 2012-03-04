@@ -12,7 +12,7 @@
 #import "CubicusClient.h"
 #import "CCApplicationController.h"
 #import "CCHostViewController.h"
-#import "CBHost.h"
+#import "CBShared.h"
 
 @implementation CCPairingController
 

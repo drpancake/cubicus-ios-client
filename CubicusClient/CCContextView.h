@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-#import "CBLayout.h"
+#import "CBShared.h"
 
 @interface CCContextView : UIView
 

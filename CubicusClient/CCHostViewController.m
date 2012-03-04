@@ -7,7 +7,7 @@
 //
 
 #import "CCHostViewController.h"
-#import "CBHost.h"
+#import "CBShared.h"
 
 @implementation CCHostViewController
 
