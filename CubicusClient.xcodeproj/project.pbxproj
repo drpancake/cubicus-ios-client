@@ -48,8 +48,8 @@
 		1A41C9F514FA7AE1009D5328 /* CBContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C9E614FA7AE1009D5328 /* CBContext.m */; };
 		1A41C9F614FA7AE1009D5328 /* CBContextState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C9E814FA7AE1009D5328 /* CBContextState.m */; };
 		1A41C9F714FA7AE1009D5328 /* CBHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C9EA14FA7AE1009D5328 /* CBHost.m */; };
-		1AD51C7715039C31009702EE /* CBCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51C7615039C31009702EE /* CBCanvasViewController.m */; };
 		1AD51C811503A6B3009702EE /* CBLayoutElement+VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */; };
+		1AFB07B7150571C100B3BD22 /* JPCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB07B6150571C100B3BD22 /* JPCanvasViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,11 +135,11 @@
 		1A41C9E814FA7AE1009D5328 /* CBContextState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBContextState.m; sourceTree = "<group>"; };
 		1A41C9E914FA7AE1009D5328 /* CBHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHost.h; sourceTree = "<group>"; };
 		1A41C9EA14FA7AE1009D5328 /* CBHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHost.m; sourceTree = "<group>"; };
-		1AD51C7515039C31009702EE /* CBCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCanvasViewController.h; sourceTree = "<group>"; };
-		1AD51C7615039C31009702EE /* CBCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCanvasViewController.m; sourceTree = "<group>"; };
 		1AD51C7915039D84009702EE /* CBShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBShared.h; sourceTree = "<group>"; };
 		1AD51C7F1503A5B8009702EE /* CBLayoutElement+VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLayoutElement+VC.h"; sourceTree = "<group>"; };
 		1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLayoutElement+VC.m"; sourceTree = "<group>"; };
+		1AFB07B5150571C100B3BD22 /* JPCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCanvasViewController.h; sourceTree = "<group>"; };
+		1AFB07B6150571C100B3BD22 /* JPCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCanvasViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +177,7 @@
 		1A41C77614FA69B5009D5328 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1AFB07B4150571C100B3BD22 /* JPCanvasViewController */,
 				1A41C9CC14FA7AE1009D5328 /* cubicus-objc-shared */,
 				1A41C92914FA6DB6009D5328 /* AsyncSocket */,
 				1A41C8DE14FA6D60009D5328 /* SBJson */,
@@ -336,10 +337,18 @@
 			children = (
 				1AD51C7F1503A5B8009702EE /* CBLayoutElement+VC.h */,
 				1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */,
-				1AD51C7515039C31009702EE /* CBCanvasViewController.h */,
-				1AD51C7615039C31009702EE /* CBCanvasViewController.m */,
 			);
 			path = ios;
+			sourceTree = "<group>";
+		};
+		1AFB07B4150571C100B3BD22 /* JPCanvasViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1AFB07B5150571C100B3BD22 /* JPCanvasViewController.h */,
+				1AFB07B6150571C100B3BD22 /* JPCanvasViewController.m */,
+			);
+			name = JPCanvasViewController;
+			path = ../../../../../repos/JPCanvasViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -441,8 +450,8 @@
 				1A41C9F514FA7AE1009D5328 /* CBContext.m in Sources */,
 				1A41C9F614FA7AE1009D5328 /* CBContextState.m in Sources */,
 				1A41C9F714FA7AE1009D5328 /* CBHost.m in Sources */,
-				1AD51C7715039C31009702EE /* CBCanvasViewController.m in Sources */,
 				1AD51C811503A6B3009702EE /* CBLayoutElement+VC.m in Sources */,
+				1AFB07B7150571C100B3BD22 /* JPCanvasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
