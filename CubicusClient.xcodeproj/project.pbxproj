@@ -14,7 +14,6 @@
 		1A41C78414FA69B5009D5328 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C78314FA69B5009D5328 /* main.m */; };
 		1A41C78814FA69B5009D5328 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C78714FA69B5009D5328 /* CCAppDelegate.m */; };
 		1A41C7A014FA6AB6009D5328 /* CCApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C79314FA6AB6009D5328 /* CCApplicationController.m */; };
-		1A41C7A114FA6AB6009D5328 /* CCContextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C79614FA6AB6009D5328 /* CCContextView.m */; };
 		1A41C7A214FA6AB6009D5328 /* CCContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C79814FA6AB6009D5328 /* CCContextViewController.m */; };
 		1A41C7A314FA6AB6009D5328 /* CCHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C79A14FA6AB6009D5328 /* CCHostViewController.m */; };
 		1A41C7A414FA6AB6009D5328 /* CCHostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A41C79B14FA6AB6009D5328 /* CCHostViewController.xib */; };
@@ -65,8 +64,6 @@
 		1A41C78714FA69B5009D5328 /* CCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CCAppDelegate.m; sourceTree = "<group>"; };
 		1A41C79214FA6AB6009D5328 /* CCApplicationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCApplicationController.h; sourceTree = "<group>"; };
 		1A41C79314FA6AB6009D5328 /* CCApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCApplicationController.m; sourceTree = "<group>"; };
-		1A41C79514FA6AB6009D5328 /* CCContextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCContextView.h; sourceTree = "<group>"; };
-		1A41C79614FA6AB6009D5328 /* CCContextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCContextView.m; sourceTree = "<group>"; };
 		1A41C79714FA6AB6009D5328 /* CCContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCContextViewController.h; sourceTree = "<group>"; };
 		1A41C79814FA6AB6009D5328 /* CCContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCContextViewController.m; sourceTree = "<group>"; };
 		1A41C79914FA6AB6009D5328 /* CCHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHostViewController.h; sourceTree = "<group>"; };
@@ -197,8 +194,6 @@
 				1A41C7A814FA6CFB009D5328 /* CubicusClient.m */,
 				1A41C79214FA6AB6009D5328 /* CCApplicationController.h */,
 				1A41C79314FA6AB6009D5328 /* CCApplicationController.m */,
-				1A41C79514FA6AB6009D5328 /* CCContextView.h */,
-				1A41C79614FA6AB6009D5328 /* CCContextView.m */,
 				1A41C79714FA6AB6009D5328 /* CCContextViewController.h */,
 				1A41C79814FA6AB6009D5328 /* CCContextViewController.m */,
 				1A41C79914FA6AB6009D5328 /* CCHostViewController.h */,
@@ -418,7 +413,6 @@
 				1A41C78414FA69B5009D5328 /* main.m in Sources */,
 				1A41C78814FA69B5009D5328 /* CCAppDelegate.m in Sources */,
 				1A41C7A014FA6AB6009D5328 /* CCApplicationController.m in Sources */,
-				1A41C7A114FA6AB6009D5328 /* CCContextView.m in Sources */,
 				1A41C7A214FA6AB6009D5328 /* CCContextViewController.m in Sources */,
 				1A41C7A314FA6AB6009D5328 /* CCHostViewController.m in Sources */,
 				1A41C7A514FA6AB6009D5328 /* CCPairingController.m in Sources */,

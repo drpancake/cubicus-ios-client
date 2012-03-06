@@ -11,7 +11,12 @@
 #import "CBShared.h"
 
 @interface CCContextViewController : UIViewController {
-    UIView *_contextView;
+//    @private
+//    // References to child UIViewController's returned by [CBLayoutElement viewController]
+//    // so we can resize them
+//    NSMutableArray *_elementViewControllers;
+    @private
+    BOOL _addedElements;
 }
 
 - (id)initWithContext:(CBContext *)context;

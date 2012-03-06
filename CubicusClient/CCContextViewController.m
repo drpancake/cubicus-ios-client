@@ -7,8 +7,13 @@
 //
 
 #import "CCContextViewController.h"
-#import "CCContextView.h"
 
+//UIColor *makeColor(void) {
+//    CGFloat red =  (CGFloat)random()/(CGFloat)RAND_MAX;
+//    CGFloat blue = (CGFloat)random()/(CGFloat)RAND_MAX;
+//    CGFloat green = (CGFloat)random()/(CGFloat)RAND_MAX;
+//    return [UIColor colorWithRed:red green:green blue:blue alpha:1];
+//}
 
 @implementation CCContextViewController
 
@@ -19,6 +24,7 @@
     self = [super init];
     if (self) {
         context = theContext;
+        _addedElements = NO;
     }
     return self;
 }
@@ -33,30 +39,49 @@
 
 #pragma mark - View lifecycle
 
-/*
-// Implement loadView to create a view hierarchy programmatically, without using a nib.
 - (void)loadView
 {
+    /*
+      Create the container view here, but wait until its been resized (i.e.
+      viewDidLayoutSubviews: is called) before adding layout subviews, as they
+      rely on dimensions
+    */
+    UIView *container = [[UIView alloc] initWithFrame:CGRectZero];
+    container.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+    self.view = container;
+    
+    // TEMP
+    container.backgroundColor = [UIColor redColor];
 }
-*/
 
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
+- (void)viewDidLayoutSubviews
 {
-    [super viewDidLoad];
-}
-*/
+    if (!_addedElements) {
+        CGRect frame = self.view.frame;
+        CGFloat x = frame.origin.x;
+        CGFloat y = frame.origin.y;
+        CGFloat h = frame.size.height;
+        CGFloat w;
 
-- (UIView *)view
-{
-    if (_contextView == nil) {
-        // Fit to parent and auto-resize
-        CGRect frame = self.parentViewController.view.bounds;
-        _contextView = [[CCContextView alloc] initWithFrame:frame layout:self.context.layout];
-        _contextView.autoresizingMask = UIViewAutoresizingFlexibleWidth|UIViewAutoresizingFlexibleHeight;
+        CBBox *box = (CBBox *)self.context.layout.rootElement;
+        for (CBLayoutElement *el in box.items) {
+            // Assuming hbox for now
+            
+            w = frame.size.width * el.ratio;
+            CGRect f = CGRectMake(x, y, w, h);
+            x += w;
+            
+            // Stubbed
+            UIView *v = [[UIView alloc] initWithFrame:f];
+            UILabel *labelView = [[UILabel alloc] initWithFrame:v.bounds];
+            labelView.text = [NSString stringWithFormat:@"<%@>", [el class]];
+            [v addSubview:labelView];
+            
+            [self.view addSubview:v];
+        }
+        
+        _addedElements = YES;
     }
-    return _contextView;
 }
 
 - (void)viewDidUnload
