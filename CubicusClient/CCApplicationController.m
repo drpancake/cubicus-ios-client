@@ -226,6 +226,8 @@
                                    options:UIViewAnimationOptionTransitionCrossDissolve
                                 animations:^{}                            
                                 completion:nil];
+        
+        // TODO: need to scale to.view to fit in case we've resized?
 
     }
     
