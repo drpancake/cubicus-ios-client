@@ -46,7 +46,7 @@
     
     // Initial child view controller (and thus content) is provided
     // by a CCHostViewController, which we pass discovered hosts
-    self.hostViewController = [[CCHostViewController alloc] initWithNibName:nil bundle:nil];
+    self.hostViewController = [[CCHostViewController alloc] init];
     self.hostViewController.delegate = self;
     self.hostViewController.view.frame = self.view.bounds;
     [self addChildViewController:self.hostViewController];

@@ -15,8 +15,6 @@
 		1A41C78814FA69B5009D5328 /* CCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C78714FA69B5009D5328 /* CCAppDelegate.m */; };
 		1A41C7A014FA6AB6009D5328 /* CCApplicationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C79314FA6AB6009D5328 /* CCApplicationController.m */; };
 		1A41C7A214FA6AB6009D5328 /* CCContextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C79814FA6AB6009D5328 /* CCContextViewController.m */; };
-		1A41C7A314FA6AB6009D5328 /* CCHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C79A14FA6AB6009D5328 /* CCHostViewController.m */; };
-		1A41C7A414FA6AB6009D5328 /* CCHostViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A41C79B14FA6AB6009D5328 /* CCHostViewController.xib */; };
 		1A41C7A514FA6AB6009D5328 /* CCPairingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C79E14FA6AB6009D5328 /* CCPairingController.m */; };
 		1A41C7A914FA6CFB009D5328 /* CubicusClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C7A814FA6CFB009D5328 /* CubicusClient.m */; };
 		1A41C7B014FA6D2E009D5328 /* block_selector.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C7AC14FA6D2E009D5328 /* block_selector.m */; };
@@ -49,6 +47,7 @@
 		1A41C9F714FA7AE1009D5328 /* CBHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C9EA14FA7AE1009D5328 /* CBHost.m */; };
 		1AD51C811503A6B3009702EE /* CBLayoutElement+VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */; };
 		1AFB07B7150571C100B3BD22 /* JPCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB07B6150571C100B3BD22 /* JPCanvasViewController.m */; };
+		1AFB07C01507FB6500B3BD22 /* CCHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB07BF1507FB6500B3BD22 /* CCHostViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,9 +65,6 @@
 		1A41C79314FA6AB6009D5328 /* CCApplicationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCApplicationController.m; sourceTree = "<group>"; };
 		1A41C79714FA6AB6009D5328 /* CCContextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCContextViewController.h; sourceTree = "<group>"; };
 		1A41C79814FA6AB6009D5328 /* CCContextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCContextViewController.m; sourceTree = "<group>"; };
-		1A41C79914FA6AB6009D5328 /* CCHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHostViewController.h; sourceTree = "<group>"; };
-		1A41C79A14FA6AB6009D5328 /* CCHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHostViewController.m; sourceTree = "<group>"; };
-		1A41C79B14FA6AB6009D5328 /* CCHostViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CCHostViewController.xib; sourceTree = "<group>"; };
 		1A41C79C14FA6AB6009D5328 /* CCHostViewControllerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHostViewControllerDelegate.h; sourceTree = "<group>"; };
 		1A41C79D14FA6AB6009D5328 /* CCPairingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCPairingController.h; sourceTree = "<group>"; };
 		1A41C79E14FA6AB6009D5328 /* CCPairingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCPairingController.m; sourceTree = "<group>"; };
@@ -137,6 +133,8 @@
 		1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLayoutElement+VC.m"; sourceTree = "<group>"; };
 		1AFB07B5150571C100B3BD22 /* JPCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCanvasViewController.h; sourceTree = "<group>"; };
 		1AFB07B6150571C100B3BD22 /* JPCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCanvasViewController.m; sourceTree = "<group>"; };
+		1AFB07BE1507FB6400B3BD22 /* CCHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHostViewController.h; sourceTree = "<group>"; };
+		1AFB07BF1507FB6500B3BD22 /* CCHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHostViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,9 +194,8 @@
 				1A41C79314FA6AB6009D5328 /* CCApplicationController.m */,
 				1A41C79714FA6AB6009D5328 /* CCContextViewController.h */,
 				1A41C79814FA6AB6009D5328 /* CCContextViewController.m */,
-				1A41C79914FA6AB6009D5328 /* CCHostViewController.h */,
-				1A41C79A14FA6AB6009D5328 /* CCHostViewController.m */,
-				1A41C79B14FA6AB6009D5328 /* CCHostViewController.xib */,
+				1AFB07BE1507FB6400B3BD22 /* CCHostViewController.h */,
+				1AFB07BF1507FB6500B3BD22 /* CCHostViewController.m */,
 				1A41C79C14FA6AB6009D5328 /* CCHostViewControllerDelegate.h */,
 				1A41C79D14FA6AB6009D5328 /* CCPairingController.h */,
 				1A41C79E14FA6AB6009D5328 /* CCPairingController.m */,
@@ -399,7 +396,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A41C78214FA69B5009D5328 /* InfoPlist.strings in Resources */,
-				1A41C7A414FA6AB6009D5328 /* CCHostViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,7 +410,6 @@
 				1A41C78814FA69B5009D5328 /* CCAppDelegate.m in Sources */,
 				1A41C7A014FA6AB6009D5328 /* CCApplicationController.m in Sources */,
 				1A41C7A214FA6AB6009D5328 /* CCContextViewController.m in Sources */,
-				1A41C7A314FA6AB6009D5328 /* CCHostViewController.m in Sources */,
 				1A41C7A514FA6AB6009D5328 /* CCPairingController.m in Sources */,
 				1A41C7A914FA6CFB009D5328 /* CubicusClient.m in Sources */,
 				1A41C7B014FA6D2E009D5328 /* block_selector.m in Sources */,
@@ -446,6 +441,7 @@
 				1A41C9F714FA7AE1009D5328 /* CBHost.m in Sources */,
 				1AD51C811503A6B3009702EE /* CBLayoutElement+VC.m in Sources */,
 				1AFB07B7150571C100B3BD22 /* JPCanvasViewController.m in Sources */,
+				1AFB07C01507FB6500B3BD22 /* CCHostViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -21,7 +21,7 @@
     NSMutableArray *_hosts;
 }
 
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic, readonly)  UITableView *tableView;
 @property (weak, nonatomic) id<CCHostViewControllerDelegate> delegate;
 
 @end
