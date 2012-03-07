@@ -48,6 +48,7 @@
 		1AD51C811503A6B3009702EE /* CBLayoutElement+VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */; };
 		1AFB07B7150571C100B3BD22 /* JPCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB07B6150571C100B3BD22 /* JPCanvasViewController.m */; };
 		1AFB07C01507FB6500B3BD22 /* CCHostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB07BF1507FB6500B3BD22 /* CCHostViewController.m */; };
+		1AFB07D91508039200B3BD22 /* CBBoxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFB07D81508039200B3BD22 /* CBBoxViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -135,6 +136,8 @@
 		1AFB07B6150571C100B3BD22 /* JPCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCanvasViewController.m; sourceTree = "<group>"; };
 		1AFB07BE1507FB6400B3BD22 /* CCHostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCHostViewController.h; sourceTree = "<group>"; };
 		1AFB07BF1507FB6500B3BD22 /* CCHostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCHostViewController.m; sourceTree = "<group>"; };
+		1AFB07D71508039200B3BD22 /* CBBoxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBBoxViewController.h; sourceTree = "<group>"; };
+		1AFB07D81508039200B3BD22 /* CBBoxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBBoxViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,6 +330,8 @@
 		1AD51C7415039C31009702EE /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				1AFB07D71508039200B3BD22 /* CBBoxViewController.h */,
+				1AFB07D81508039200B3BD22 /* CBBoxViewController.m */,
 				1AD51C7F1503A5B8009702EE /* CBLayoutElement+VC.h */,
 				1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */,
 			);
@@ -442,6 +447,7 @@
 				1AD51C811503A6B3009702EE /* CBLayoutElement+VC.m in Sources */,
 				1AFB07B7150571C100B3BD22 /* JPCanvasViewController.m in Sources */,
 				1AFB07C01507FB6500B3BD22 /* CCHostViewController.m in Sources */,
+				1AFB07D91508039200B3BD22 /* CBBoxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,17 +10,16 @@
 
 #import "CBShared.h"
 
-@interface CCContextViewController : UIViewController {
-//    @private
-//    // References to child UIViewController's returned by [CBLayoutElement viewController]
-//    // so we can resize them
-//    NSMutableArray *_elementViewControllers;
-    @private
-    BOOL _addedElements;
-}
+/*
+  For now this class doesn't do much other than create a CBBoxViewController
+  for the root element and display it as a subview
+*/
+
+@interface CCContextViewController : UIViewController
 
 - (id)initWithContext:(CBContext *)context;
 
 @property (readonly, strong) CBContext *context;
+@property (nonatomic, strong, readonly) CBBoxViewController *rootBoxViewController;
 
 @end
