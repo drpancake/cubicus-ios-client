@@ -20,6 +20,6 @@
 - (id)initWithContext:(CBContext *)context;
 
 @property (readonly, strong) CBContext *context;
-@property (nonatomic, strong, readonly) CBBoxViewController *rootBoxViewController;
+@property (nonatomic, strong, readonly) CBElementViewController *rootElementViewController;
 
 @end

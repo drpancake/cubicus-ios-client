@@ -18,7 +18,7 @@
 @implementation CCContextViewController
 
 @synthesize context;
-@synthesize rootBoxViewController;
+@synthesize rootElementViewController;
 
 - (id)initWithContext:(CBContext *)theContext
 {
@@ -47,14 +47,14 @@
     
     // From here view controllers are created recursively downwards
     CBBox *box = (CBBox *)self.context.layout.rootElement;
-    rootBoxViewController = (CBBoxViewController *)[box viewControllerForElement];
-    [container addSubview:rootBoxViewController.view];
+    rootElementViewController = [box viewControllerForElement];
+    [container addSubview:rootElementViewController.view];
 }
 
 - (void)viewDidLayoutSubviews
 {
     // Fill our container view
-    self.rootBoxViewController.view.frame = [self.view bounds];
+    self.rootElementViewController.view.frame = [self.view bounds];
 }
 
 - (void)viewDidUnload
