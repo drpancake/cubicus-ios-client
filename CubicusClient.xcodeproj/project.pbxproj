@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A235D3C150942A500CAE766 /* CBCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A235D3B150942A500CAE766 /* CBCanvasViewController.m */; };
 		1A41C77814FA69B5009D5328 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A41C77714FA69B5009D5328 /* UIKit.framework */; };
 		1A41C77A14FA69B5009D5328 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A41C77914FA69B5009D5328 /* Foundation.framework */; };
 		1A41C77C14FA69B5009D5328 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A41C77B14FA69B5009D5328 /* CoreGraphics.framework */; };
@@ -53,6 +54,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A235D3A150942A500CAE766 /* CBCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCanvasViewController.h; sourceTree = "<group>"; };
+		1A235D3B150942A500CAE766 /* CBCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCanvasViewController.m; sourceTree = "<group>"; };
 		1A41C77314FA69B5009D5328 /* CubicusClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CubicusClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A41C77714FA69B5009D5328 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1A41C77914FA69B5009D5328 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -339,6 +342,8 @@
 				1AFB07D81508039200B3BD22 /* CBBoxViewController.m */,
 				1AFB07DA150819BD00B3BD22 /* CBElementViewController.h */,
 				1AFB07DB150819BD00B3BD22 /* CBElementViewController.m */,
+				1A235D3A150942A500CAE766 /* CBCanvasViewController.h */,
+				1A235D3B150942A500CAE766 /* CBCanvasViewController.m */,
 			);
 			path = ios;
 			sourceTree = "<group>";
@@ -454,6 +459,7 @@
 				1AFB07C01507FB6500B3BD22 /* CCHostViewController.m in Sources */,
 				1AFB07D91508039200B3BD22 /* CBBoxViewController.m in Sources */,
 				1AFB07DC150819BD00B3BD22 /* CBElementViewController.m in Sources */,
+				1A235D3C150942A500CAE766 /* CBCanvasViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
