@@ -48,6 +48,7 @@
     // From here view controllers are created recursively downwards
     CBBox *box = (CBBox *)self.context.layout.rootElement;
     rootElementViewController = [box viewControllerForElement];
+    rootElementViewController.delegate = self;
     [container addSubview:rootElementViewController.view];
 }
 
@@ -67,6 +68,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+}
+
+#pragma mark -
+#pragma mark CBElementViewControllerDelegate
+
+- (void)elementViewController:(CBElementViewController *)viewController didSendEvent:(CBEvent *)event
+{
+    NSLog(@"ContextView got event: %@", event);
 }
 
 @end
