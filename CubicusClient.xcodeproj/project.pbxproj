@@ -143,6 +143,7 @@
 		1ADA213B151149B400A8825C /* CBEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBEvent.h; sourceTree = "<group>"; };
 		1ADA213C151149B400A8825C /* CBEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBEvent.m; sourceTree = "<group>"; };
 		1ADA2146151343DD00A8825C /* CBEventReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBEventReceiver.h; sourceTree = "<group>"; };
+		1ADA2147151351E600A8825C /* CBSerializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBSerializable.h; sourceTree = "<group>"; };
 		1AFA2245150E295600436493 /* canvas.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = canvas.html; sourceTree = "<group>"; };
 		1AFA2259150E499100436493 /* NativeBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = NativeBridge.js; sourceTree = "<group>"; };
 		1AFA2264150F47F700436493 /* JPCanvasViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPCanvasViewControllerDelegate.h; sourceTree = "<group>"; };
@@ -344,6 +345,7 @@
 				1ADA213B151149B400A8825C /* CBEvent.h */,
 				1ADA213C151149B400A8825C /* CBEvent.m */,
 				1ADA2146151343DD00A8825C /* CBEventReceiver.h */,
+				1ADA2147151351E600A8825C /* CBSerializable.h */,
 			);
 			path = models;
 			sourceTree = "<group>";
