@@ -71,9 +71,9 @@
 }
 
 #pragma mark -
-#pragma mark CBElementViewControllerDelegate
+#pragma mark CBEventReceiver
 
-- (void)elementViewController:(CBElementViewController *)viewController didSendEvent:(CBEvent *)event
+- (void)sender:(id)sender didFireEvent:(CBEvent *)event
 {
     NSLog(@"ContextView got event for element ID %i", event.elementID);
     

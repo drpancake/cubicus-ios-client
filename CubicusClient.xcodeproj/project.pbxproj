@@ -140,9 +140,9 @@
 		1AD51C7915039D84009702EE /* CBShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBShared.h; sourceTree = "<group>"; };
 		1AD51C7F1503A5B8009702EE /* CBLayoutElement+VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLayoutElement+VC.h"; sourceTree = "<group>"; };
 		1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLayoutElement+VC.m"; sourceTree = "<group>"; };
-		1ADA21391511499700A8825C /* CBElementViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBElementViewControllerDelegate.h; sourceTree = "<group>"; };
 		1ADA213B151149B400A8825C /* CBEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBEvent.h; sourceTree = "<group>"; };
 		1ADA213C151149B400A8825C /* CBEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBEvent.m; sourceTree = "<group>"; };
+		1ADA2146151343DD00A8825C /* CBEventReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBEventReceiver.h; sourceTree = "<group>"; };
 		1AFA2245150E295600436493 /* canvas.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = canvas.html; sourceTree = "<group>"; };
 		1AFA2259150E499100436493 /* NativeBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = NativeBridge.js; sourceTree = "<group>"; };
 		1AFA2264150F47F700436493 /* JPCanvasViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPCanvasViewControllerDelegate.h; sourceTree = "<group>"; };
@@ -343,6 +343,7 @@
 				1A41C9EA14FA7AE1009D5328 /* CBHost.m */,
 				1ADA213B151149B400A8825C /* CBEvent.h */,
 				1ADA213C151149B400A8825C /* CBEvent.m */,
+				1ADA2146151343DD00A8825C /* CBEventReceiver.h */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -356,7 +357,6 @@
 				1AFB07D81508039200B3BD22 /* CBBoxViewController.m */,
 				1AFB07DA150819BD00B3BD22 /* CBElementViewController.h */,
 				1AFB07DB150819BD00B3BD22 /* CBElementViewController.m */,
-				1ADA21391511499700A8825C /* CBElementViewControllerDelegate.h */,
 				1A235D3A150942A500CAE766 /* CBCanvasViewController.h */,
 				1A235D3B150942A500CAE766 /* CBCanvasViewController.m */,
 				1AFA22651511287A00436493 /* CBButtonViewController.h */,

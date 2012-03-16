@@ -15,7 +15,7 @@
   for the root element and display it as a subview
 */
 
-@interface CCContextViewController : UIViewController <CBElementViewControllerDelegate>
+@interface CCContextViewController : UIViewController <CBEventReceiver>
 
 - (id)initWithContext:(CBContext *)context;
 
