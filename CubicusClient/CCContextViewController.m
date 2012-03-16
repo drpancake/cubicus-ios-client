@@ -19,6 +19,7 @@
 
 @synthesize context;
 @synthesize rootElementViewController;
+@synthesize delegate;
 
 - (id)initWithContext:(CBContext *)theContext
 {
@@ -74,10 +75,9 @@
 #pragma mark CBEventReceiver
 
 - (void)sender:(id)sender didFireEvent:(CBEvent *)event
-{
-    NSLog(@"ContextView got event for element ID %i", event.elementID);
-    
+{   
     event.contextID = self.context.contextID;
+    [self.delegate sender:self didFireEvent:event];
 }
 
 @end

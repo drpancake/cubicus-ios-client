@@ -171,6 +171,22 @@
 }
 
 #pragma mark -
+#pragma mark CBEventReceiver
+
+- (void)sender:(id)sender didFireEvent:(CBEvent *)event
+{
+    // For now we assume only the active application/context can
+    // bubble up events, so ensure that this is the case
+    NSString *key = [CCApplicationController keyForApplication:_currentApplication context:_currentContext];
+    id vc = [_contextViewControllers objectForKey:key];
+    NSAssert([sender isEqual:vc], @"Unexpected event from inactive context");
+    
+    // Attach app ID to the event and send it to the daemon
+    event.applicationID = _currentApplication;
+    [self.client sendEvent:event];
+}
+
+#pragma mark -
 #pragma mark CBDeviceClientDelegate
 
 - (void)client:(CBDeviceClient *)client didReceiveApplications:(NSArray *)applications
@@ -185,6 +201,7 @@
         // Create child context controllers, but don't display anything yet
         for (CBContext *context in app.contexts) {
             CCContextViewController *vc = [[CCContextViewController alloc] initWithContext:context];
+            vc.delegate = self; // Receive its events
             [self addChildViewController:vc];
             
             NSString *key = [CCApplicationController keyForApplication:app.applicationID context:context.contextID];
