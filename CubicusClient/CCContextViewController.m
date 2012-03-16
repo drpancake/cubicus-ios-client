@@ -75,7 +75,9 @@
 
 - (void)elementViewController:(CBElementViewController *)viewController didSendEvent:(CBEvent *)event
 {
-    NSLog(@"ContextView got event: %@", event);
+    NSLog(@"ContextView got event for element ID %i", event.elementID);
+    
+    event.contextID = self.context.contextID;
 }
 
 @end
