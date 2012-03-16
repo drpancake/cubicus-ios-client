@@ -19,13 +19,14 @@
 
 @synthesize context;
 @synthesize rootElementViewController;
-@synthesize delegate;
+@synthesize eventReceiver;
 
 - (id)initWithContext:(CBContext *)theContext
 {
     self = [super init];
     if (self) {
         context = theContext;
+        eventReceiver = nil;
     }
     return self;
 }
@@ -49,7 +50,7 @@
     // From here view controllers are created recursively downwards
     CBBox *box = (CBBox *)self.context.layout.rootElement;
     rootElementViewController = [box viewControllerForElement];
-    rootElementViewController.delegate = self;
+    rootElementViewController.eventReceiver = self;
     [container addSubview:rootElementViewController.view];
 }
 
@@ -77,7 +78,7 @@
 - (void)sender:(id)sender didFireEvent:(CBEvent *)event
 {   
     event.contextID = self.context.contextID;
-    [self.delegate sender:self didFireEvent:event];
+    [self.eventReceiver sender:self didFireEvent:event];
 }
 
 @end

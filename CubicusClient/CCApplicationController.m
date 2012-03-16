@@ -201,7 +201,7 @@
         // Create child context controllers, but don't display anything yet
         for (CBContext *context in app.contexts) {
             CCContextViewController *vc = [[CCContextViewController alloc] initWithContext:context];
-            vc.delegate = self; // Receive its events
+            vc.eventReceiver = self;
             [self addChildViewController:vc];
             
             NSString *key = [CCApplicationController keyForApplication:app.applicationID context:context.contextID];

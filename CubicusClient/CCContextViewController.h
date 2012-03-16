@@ -22,6 +22,6 @@
 @property (readonly, strong) CBContext *context;
 @property (nonatomic, strong, readonly) CBElementViewController *rootElementViewController;
 
-@property (nonatomic, weak) id<CBEventReceiver> delegate;
+@property (nonatomic, weak) id<CBEventReceiver> eventReceiver;
 
 @end
