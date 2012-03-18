@@ -7,6 +7,7 @@
 //
 
 #import "CCContextViewController.h"
+#import "CCApplicationController.h"
 
 //UIColor *makeColor(void) {
 //    CGFloat red =  (CGFloat)random()/(CGFloat)RAND_MAX;
@@ -77,8 +78,14 @@
 
 - (void)sender:(id)sender didFireEvent:(CBEvent *)event
 {   
-    event.contextID = self.context.contextID;
-    [self.eventReceiver sender:self didFireEvent:event];
+    if ([sender isEqual:self.rootElementViewController]) {
+        // Event came upwards from the layout hierarchy, so pass upwards
+        event.contextID = self.context.contextID;
+        [self.eventReceiver sender:self didFireEvent:event];
+    } else if ([sender isKindOfClass:[CCApplicationController class]]) {
+        // Otherwise it came from the daemon so pass downwards
+        [self.rootElementViewController sender:self didFireEvent:event];
+    }
 }
 
 @end
