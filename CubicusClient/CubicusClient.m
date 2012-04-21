@@ -8,7 +8,7 @@
 
 #import "CubicusClient.h"
 
-NSString *const CC_BONJOUR_SERVICE = @"_test._tcp.";
+NSString *const CC_BONJOUR_SERVICE = @"_cubicus._tcp.";
 
 // NSUserDefaults key for ~unique GUID
 NSString *const CC_GUID_KEY = @"cubicus_guid";
