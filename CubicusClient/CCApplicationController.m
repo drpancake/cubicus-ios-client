@@ -257,8 +257,6 @@
     NSString *key = [CCApplicationController keyForApplication:event.applicationID context:event.contextID];
     CCContextViewController *vc = [_contextViewControllers objectForKey:key];
     [vc sender:self didFireEvent:event];
-    
-    NSLog(@"AC got event for context: %i, element: %i", event.contextID, event.elementID);
 }
 
 @end
