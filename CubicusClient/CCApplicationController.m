@@ -119,10 +119,7 @@
     NSString *key = [CCApplicationController keyForApplication:newApplication context:newContext];
     if ([_contextViewControllers objectForKey:key] != nil) {
         [self.client switchApplication:newApplication context:newContext];
-    } else {
-        NSLog(@"no such app/context: %@", key);
     }
-    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -214,8 +211,6 @@
 {
     // TODO: first switch: pre-load all application default views and slide them in from the left
     
-    NSLog(@"Switching to app %i context %i", applicationID, contextID);
-    
     // Don't do anything if we're already on the requested app/context
     if (_currentApplication == applicationID && _currentContext == contextID) {
         return;
@@ -236,15 +231,14 @@
         NSString *fromKey = [CCApplicationController keyForApplication:_currentApplication context:_currentContext];
         CCContextViewController *from = (CCContextViewController *)[_contextViewControllers objectForKey:fromKey];
         
-        from.view.frame = self.view.bounds;
+        // Ensure context view we're moving to fits our container view before animating
+        to.view.frame = self.view.bounds;
+        
         [self transitionFromViewController:from toViewController:to
                                   duration:0.3
                                    options:UIViewAnimationOptionTransitionCrossDissolve
                                 animations:^{}                            
                                 completion:nil];
-        
-        // TODO: need to scale to.view to fit in case we've resized?
-
     }
     
     _currentApplication = applicationID;
