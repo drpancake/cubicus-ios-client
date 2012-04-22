@@ -46,6 +46,7 @@
 		1A41C9F514FA7AE1009D5328 /* CBContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C9E614FA7AE1009D5328 /* CBContext.m */; };
 		1A41C9F614FA7AE1009D5328 /* CBContextState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C9E814FA7AE1009D5328 /* CBContextState.m */; };
 		1A41C9F714FA7AE1009D5328 /* CBHost.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A41C9EA14FA7AE1009D5328 /* CBHost.m */; };
+		1A42C76A154429CC00F3F6F2 /* CBCanvasCoverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A42C769154429CC00F3F6F2 /* CBCanvasCoverView.m */; };
 		1AD51C811503A6B3009702EE /* CBLayoutElement+VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */; };
 		1ADA213D151149B400A8825C /* CBEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA213C151149B400A8825C /* CBEvent.m */; };
 		1AFA2246150E295600436493 /* canvas.html in Resources */ = {isa = PBXBuildFile; fileRef = 1AFA2245150E295600436493 /* canvas.html */; };
@@ -137,6 +138,8 @@
 		1A41C9E814FA7AE1009D5328 /* CBContextState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBContextState.m; sourceTree = "<group>"; };
 		1A41C9E914FA7AE1009D5328 /* CBHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBHost.h; sourceTree = "<group>"; };
 		1A41C9EA14FA7AE1009D5328 /* CBHost.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBHost.m; sourceTree = "<group>"; };
+		1A42C768154429CC00F3F6F2 /* CBCanvasCoverView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBCanvasCoverView.h; sourceTree = "<group>"; };
+		1A42C769154429CC00F3F6F2 /* CBCanvasCoverView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBCanvasCoverView.m; sourceTree = "<group>"; };
 		1AD51C7915039D84009702EE /* CBShared.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBShared.h; sourceTree = "<group>"; };
 		1AD51C7F1503A5B8009702EE /* CBLayoutElement+VC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CBLayoutElement+VC.h"; sourceTree = "<group>"; };
 		1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CBLayoutElement+VC.m"; sourceTree = "<group>"; };
@@ -361,6 +364,8 @@
 				1AFB07DB150819BD00B3BD22 /* CBElementViewController.m */,
 				1A235D3A150942A500CAE766 /* CBCanvasViewController.h */,
 				1A235D3B150942A500CAE766 /* CBCanvasViewController.m */,
+				1A42C768154429CC00F3F6F2 /* CBCanvasCoverView.h */,
+				1A42C769154429CC00F3F6F2 /* CBCanvasCoverView.m */,
 				1AFA22651511287A00436493 /* CBButtonViewController.h */,
 				1AFA22661511287A00436493 /* CBButtonViewController.m */,
 			);
@@ -486,6 +491,7 @@
 				1A235D3C150942A500CAE766 /* CBCanvasViewController.m in Sources */,
 				1AFA22671511287B00436493 /* CBButtonViewController.m in Sources */,
 				1ADA213D151149B400A8825C /* CBEvent.m in Sources */,
+				1A42C76A154429CC00F3F6F2 /* CBCanvasCoverView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
