@@ -174,14 +174,14 @@
 - (void)sender:(id)sender didFireEvent:(CBEvent *)event
 {
     // For now we assume only the active application/context can
-    // bubble up events, so ensure that this is the case
+    // bubble up events (ignore other events)
     NSString *key = [CCApplicationController keyForApplication:_currentApplication context:_currentContext];
     id vc = [_contextViewControllers objectForKey:key];
-    NSAssert([sender isEqual:vc], @"Unexpected event from inactive context");
-    
-    // Attach app ID to the event and send it to the daemon
-    event.applicationID = _currentApplication;
-    [self.client sendEvent:event];
+    if ([sender isEqual:vc]) {
+        // Attach app ID to the event and send it to the daemon
+        event.applicationID = _currentApplication;
+        [self.client sendEvent:event];
+    }
 }
 
 #pragma mark -
