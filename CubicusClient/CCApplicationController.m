@@ -158,6 +158,7 @@
                                                 initWithTarget:self
                                                 action:action];
         recognizer.direction = direction;
+        recognizer.numberOfTouchesRequired = 2; // Avoids interference with canvas elements
         [self.view addGestureRecognizer:recognizer];
     }
 }
