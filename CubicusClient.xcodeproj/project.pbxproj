@@ -52,6 +52,7 @@
 		1A42CCAA1545946000F3F6F2 /* CBAccelerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A42CCA91545946000F3F6F2 /* CBAccelerator.m */; };
 		1AD51C811503A6B3009702EE /* CBLayoutElement+VC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AD51C801503A6B3009702EE /* CBLayoutElement+VC.m */; };
 		1ADA213D151149B400A8825C /* CBEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA213C151149B400A8825C /* CBEvent.m */; };
+		1ADE23AA154CAE9B009B2C29 /* CBVerticalBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADE23A9154CAE9A009B2C29 /* CBVerticalBox.m */; };
 		1AFA2246150E295600436493 /* canvas.html in Resources */ = {isa = PBXBuildFile; fileRef = 1AFA2245150E295600436493 /* canvas.html */; };
 		1AFA225B150E4B2A00436493 /* NativeBridge.js in Resources */ = {isa = PBXBuildFile; fileRef = 1AFA2259150E499100436493 /* NativeBridge.js */; };
 		1AFA22671511287B00436493 /* CBButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AFA22661511287A00436493 /* CBButtonViewController.m */; };
@@ -156,6 +157,8 @@
 		1ADA213C151149B400A8825C /* CBEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBEvent.m; sourceTree = "<group>"; };
 		1ADA2146151343DD00A8825C /* CBEventReceiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBEventReceiver.h; sourceTree = "<group>"; };
 		1ADA2147151351E600A8825C /* CBSerializable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CBSerializable.h; sourceTree = "<group>"; };
+		1ADE23A8154CAE9A009B2C29 /* CBVerticalBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBVerticalBox.h; sourceTree = "<group>"; };
+		1ADE23A9154CAE9A009B2C29 /* CBVerticalBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CBVerticalBox.m; sourceTree = "<group>"; };
 		1AFA2245150E295600436493 /* canvas.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = canvas.html; sourceTree = "<group>"; };
 		1AFA2259150E499100436493 /* NativeBridge.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = NativeBridge.js; sourceTree = "<group>"; };
 		1AFA2264150F47F700436493 /* JPCanvasViewControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JPCanvasViewControllerDelegate.h; sourceTree = "<group>"; };
@@ -327,6 +330,8 @@
 		1A41C9D514FA7AE1009D5328 /* layout */ = {
 			isa = PBXGroup;
 			children = (
+				1ADE23A8154CAE9A009B2C29 /* CBVerticalBox.h */,
+				1ADE23A9154CAE9A009B2C29 /* CBVerticalBox.m */,
 				1A42CCA81545946000F3F6F2 /* CBAccelerator.h */,
 				1A42CCA91545946000F3F6F2 /* CBAccelerator.m */,
 				1A41C9D614FA7AE1009D5328 /* CBBox.h */,
@@ -510,6 +515,7 @@
 				1A42CCA31545923C00F3F6F2 /* CBAcceleratorViewController.m in Sources */,
 				1A42CCA71545930F00F3F6F2 /* CBAcceleratorView.m in Sources */,
 				1A42CCAA1545946000F3F6F2 /* CBAccelerator.m in Sources */,
+				1ADE23AA154CAE9B009B2C29 /* CBVerticalBox.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
