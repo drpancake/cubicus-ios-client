@@ -102,10 +102,10 @@
     
     switch (direction) {
         case UISwipeGestureRecognizerDirectionUp:
-            newContext += 1;
+            newContext -= 1;
             break;
         case UISwipeGestureRecognizerDirectionDown:
-            newContext -= 1;
+            newContext += 1;
             break;
         case UISwipeGestureRecognizerDirectionLeft:
             newApplication -= 1;
@@ -247,10 +247,23 @@
         // Ensure context view we're moving to fits our container view before animating
         to.view.frame = self.view.bounds;
         
+        int horizontalDiff = _currentApplication - applicationID;
+        int verticalDiff = _currentContext - contextID;
+        UIViewAnimationOptions options;
+        if (horizontalDiff < 0) {
+            options = UIViewAnimationOptionTransitionFlipFromLeft;
+        } else if (horizontalDiff > 0) {
+            options = UIViewAnimationOptionTransitionFlipFromRight;
+        } else if (verticalDiff < 0) {
+            options = UIViewAnimationOptionTransitionFlipFromBottom;
+        } else {
+            options = UIViewAnimationOptionTransitionFlipFromTop;
+        }
+        
         [self transitionFromViewController:from toViewController:to
                                   duration:0.3
-                                   options:UIViewAnimationOptionTransitionCrossDissolve
-                                animations:^{}                            
+                                   options:options
+                                animations:^{}
                                 completion:nil];
     }
     
