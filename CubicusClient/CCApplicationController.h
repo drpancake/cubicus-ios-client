@@ -10,7 +10,7 @@
 
 #import "CBShared.h"
 
-@interface CCApplicationController : UIViewController <CBDeviceClientDelegate, CBEventReceiver> {
+@interface CCApplicationController : UIViewController <CBDeviceClientDelegate, CBEventReceiver, UIAlertViewDelegate> {
     /*
       Keeps track of all current CBApplications. CBClient notifies us when the list
       needs to change (keys are NSNumber application IDs, values are CBApplication objects)

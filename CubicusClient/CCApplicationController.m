@@ -187,6 +187,18 @@
 #pragma mark -
 #pragma mark CBDeviceClientDelegate
 
+- (void)clientDidReceivePairRequest:(CBDeviceClient *)client
+{
+    UIAlertView *alertView = [[UIAlertView alloc]
+                              initWithTitle:@"Pairing"
+                              message:@"Enter the PIN number displayed by the host"
+                              delegate:self
+                              cancelButtonTitle:@"Pair"
+                              otherButtonTitles:nil];
+    alertView.alertViewStyle = UIAlertViewStylePlainTextInput;
+    [alertView show];
+}
+
 - (void)client:(CBDeviceClient *)client didReceiveApplications:(NSArray *)applications
 {
     NSAssert([_applications count] == 0 && [_contextViewControllers count] == 0,
@@ -252,6 +264,16 @@
     NSString *key = [CCApplicationController keyForApplication:event.applicationID context:event.contextID];
     CCContextViewController *vc = [_contextViewControllers objectForKey:key];
     [vc sender:self didFireEvent:event];
+}
+
+#pragma mark -
+#pragma mark UIAlertViewDelegate
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    UITextField *input = [alertView textFieldAtIndex:0];
+    NSString *pin = input.text;
+    [self.client sendPairResponse:pin];
 }
 
 @end
